@@ -112,6 +112,15 @@
                 <p>@specificProduct.Description</p>
             </div>
             <div>
+                @if(specificProduct.Attributes != null && specificProduct.Attributes.Count > 0)
+                {
+                    @foreach(var attrib in specificProduct.Attributes)
+                    {
+                        <b>@attrib.Key: </b> @attrib.Value <br />
+                    }
+                }
+            </div>
+            <div>
                 <a href= @($"{@config["AppBasePath"]}stores/store/{StoreId} class="btn btn-primary col-5">Close</a>
             </div>
         </div>
