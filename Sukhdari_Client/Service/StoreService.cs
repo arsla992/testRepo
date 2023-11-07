@@ -18,6 +18,7 @@ namespace Sukhdari_Client.Service
         }
         public async Task<IEnumerable<StoreDTO>> getAllStores()
         {
+            //Hi my name is Arslan
             var response = await _httpClient.GetAsync($"api/Store/getAllStores");
             var content = await response.Content.ReadAsStringAsync();
             var stores = JsonConvert.DeserializeObject<IEnumerable<StoreDTO>>(content);
