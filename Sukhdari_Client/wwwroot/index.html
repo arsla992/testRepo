@@ -5,9 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Sukhdari</title>
-    <base href="/MyApp/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/app.css" rel="stylesheet" />
+    <!--<base href="/MyApp" />
+    <link href="/css/bootstrap/bootstrap.min.css/" rel="stylesheet" />
+    <link href="/css/app.css/" rel="stylesheet" />-->
+    <!--<link href="Sukhdari_Client.styles.css" rel="stylesheet" />-->
+    <base href="/MyApp" />
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/app.css" rel="stylesheet" />
     <link href="Sukhdari_Client.styles.css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -17,10 +21,18 @@
 </head>
 
 <body>
-    <div id="app">
+    <!--<div id="app">
         <div style="position:fixed;top:50%;left:53%;margin-top:-50px;margin-left:-100px;">
-            <img src="Images/loader.gif" />
+            <img src="/Images/loader.gif" />
         </div>
+    </div>-->
+
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
     </div>
 
     <div id="blazor-error-ui">
